@@ -1,5 +1,7 @@
 # Vue3 & Fast-Api & Sentry Setup with Nginx
 
+[![CI](https://github.com/sammiee5311/vue3-fastapi-sentry-setup/actions/workflows/CI.yml/badge.svg)](https://github.com/sammiee5311/vue3-fastapi-sentry-setup/actions/workflows/CI.yml)
+
 ## Step 1
 - Type following command to create ssl keys for nginx: `make create-ssl-key`.
 
@@ -14,3 +16,7 @@
 ## Step 4
 - Use `docker-compose up --build` command again.
 - Use `https://localhost:443` to connect to frontend.
+
+
+## Test
+- `make test-all`

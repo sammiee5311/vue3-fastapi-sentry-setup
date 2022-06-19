@@ -18,8 +18,6 @@ test-frontend:
 
 test-all: setup-backend test-backend setup-frontend test-frontend
 
-
 create-ssl-key:
 	cd nginx &&\
 		openssl req -config local.conf -new -sha256 -newkey rsa:2048 -nodes -keyout local.key -x509 -days 365 -out local.crt
-
